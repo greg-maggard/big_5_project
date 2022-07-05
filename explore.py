@@ -63,6 +63,11 @@ openness = {"OPN1" : "I have a rich vocabulary.",
 
 def metric_means(df):
 
+    '''
+    Calculates the mean value for each of the metrics, across the dataset. 
+    Returns a DataFrame of the metrics and their corresponding mean values. 
+    '''
+
     #Calculating mean openness:
     mean_openness = 0
     for i in openness.keys():
@@ -102,7 +107,17 @@ def metric_means(df):
 
     return metric_means_df
 
+#Creating a function that will undo reverse-scoring for better visibility in correlation:
+def undo_reverse_scoring(df):
 
+    # Identifying which questions are reverse-coded:
+    reverse_coded = ["EXT2","EXT4","EXT6","EXT8","EXT10","EST2","EST4","AGR1","AGR3","AGR5","AGR7","CSN2","CSN4","CSN6","CSN8","OPN2","OPN4","OPN6"]
 
-
-    return mean_openness, mean_conscientiousness, mean_extroversion, mean_agreeableness, mean_neuroticism
+    '''
+    Takes in the DataFrame of Big 5 responses. 
+    Subtracts all values in reverse-coded columns from 6 (1 higher than their max) in order to flip the values, then writes over those values 
+    to effectively undo the reverse-coding. 
+    Return dataframe with reverse-coding removed for better visibility in correlation plot.
+    '''
+    df[reverse_coded] = 6 - df[reverse_coded]
+    return df
