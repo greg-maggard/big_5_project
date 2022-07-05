@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 
+from sklearn.model_selection import train_test_split
+
 ## ACQUISITION:
 
 def acquire_big_5_data():
