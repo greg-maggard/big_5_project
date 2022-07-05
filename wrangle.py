@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 def acquire_big_5_data():
     #Acquiring Big 5 Data from CSV of user responses:
     df = pd.read_csv('big_5_data.csv', sep = '\t')
+    #Return data frame of user responses:
     return df
 
 ## PREPARATION:
