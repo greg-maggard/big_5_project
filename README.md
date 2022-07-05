@@ -1,6 +1,12 @@
 # Big 5 Personality Clustering Project
 By: Greg Maggard
 
+
+## Executive Summary:
+- This project uses K-Means Clustering to identify 5 distinct personality groupings within a dataset of over 600,000 responses to an online 'Big 5' personality questionnaire. 
+- This project lays the groundwork for me to develop a thorough understanding of clustering and its uses, and provides a jumping off point for me to practice completing more complex analysis or building more useful functionality, using data I find to be very interesting. 
+
+
 ## Introduction:
 This project intends to use K-Means clustering to identify potential personality groupings that may be found in user responses to a personality metric, which is based on the [Big 5 Personality Model](https://en.wikipedia.org/wiki/Big_Five_personality_traits). This online assessment, hosted by the Open-Source Psychometrics Project can be found [here](https://openpsychometrics.org/tests/IPIP-BFFM/).
 
