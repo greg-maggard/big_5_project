@@ -3,4 +3,15 @@ env.py
 .ipynb_checkpoints/
 __pycache__
 .vscode/
+<<<<<<< HEAD
+<<<<<<< HEAD
+*.xlsx
+*.csv
+=======
+*.csv
+>>>>>>> parent of d786e6c (Adding big_5_data.csv)
+big_5_data.csv
+=======
+*.csv
+>>>>>>> parent of d786e6c (Adding big_5_data.csv)
 *.csv
